@@ -1,0 +1,18 @@
+import React from 'react';
+import NavBar from './components/NavBar';
+import Dashboard from './components/Dashboard';
+import ActivityLog from './components/ActivityLog';
+import ActivityChart from './components/ActivityChart';
+
+const App = () => {
+    return (
+        <div className="app">
+            <NavBar />
+            <Dashboard />
+            <ActivityLog />
+            <ActivityChart data={[200, 300, 400, 500, 600, 700, 800]} />
+        </div>
+    );
+};
+
+export default App;
